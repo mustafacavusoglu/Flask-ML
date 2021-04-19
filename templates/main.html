@@ -1,0 +1,56 @@
+{% block title %}
+    <title>AI Prediction</title>
+{% endblock %}
+
+{% block head %}
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+{% endblock %}
+
+{% block nav %}
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="margin: 0;">
+    <!-- Brand -->
+    <a class="navbar-brand" href="/">Tenis Game Prediction</a>
+   
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>    
+  </nav>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+{% endblock %}
+
+
+
+{% block body %}
+    <body>
+    
+    <form action="tahmin" method="POST">
+        <div class="form-group">
+          <label >Hava Durumu</label>
+          <input type="text" class="form-control"   name="havad" placeholder="Güneşli-Yağmurlu-Kapalı">
+        </div>
+
+        <div class="form-group">
+          <label >Sıcaklık</label>
+          <input type="text" class="form-control"  name="sicak" placeholder="°F">
+        </div>
+        <div class="form-group">
+          <label >Nem</label>
+          <input type="text" class="form-control"  name="nem" placeholder="%">
+          
+
+        </div>
+        <div class="form-group">
+          <label >Rüzgar</label>
+          <input type="text" class="form-control"  name="ruzgar" placeholder="Var ise 0 yok ise 1 yazınız...">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Tahmin Et</button>
+
+      </form>
+    </body>
+{% endblock %}

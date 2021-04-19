@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+ 
+{% block title %}
+   <title>Sorular</title>
+{% endblock %}
+ 
+{% block body %}
+{% include "navbar.html" %}
+ <div class="jumbotron">
+    <center><h2>Ücretsiz Eğitimler</h2></center><br><br>
+<div class="row">
+   <div class="col-md-4">
+      <h3 >Python Flask</h3><br>
+      <img src="{{ url_for('static', filename = 'images/flask.png') }}" ><br>
+   
+   </div>
+ 
+    <div class="col-md-4">
+      <h3 >Android Mobil</h3><br>
+         <img src="{{ url_for('static', filename = 'images/android.png') }}" >
+   </div>
+ 
+    <div class="col-md-4">
+      <h3 >Python Görüntü İşleme</h3><br>
+      <img src="{{ url_for('static', filename = 'images/goruntu_isleme.png') }}">
+   </div>
+ 
+ 
+   </div>
+ 
+</div>
+ 
+{% endblock %}
