@@ -1,3 +1,13 @@
-# Flask-ML
+## Requirements
 
-This is a basic Machine Learning Project with back-end(Flask)
+* flask
+* pickle
+* wtforms
+* numpy
+* pandas
+* sklearn
+## How to Use Local
+
+* #### pip install -r requirements.txt
+* ####  python flaskApp.py 
+* #### it will run on localhost:1247 
