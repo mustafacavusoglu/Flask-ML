@@ -1,2 +1,6 @@
 flask
 pickle
+wtforms 
+numpy
+pandas
+sklearn
